@@ -44,12 +44,11 @@
 
 (defn process [in]
   (doseq [d (range 1 25)]
-    (do
-      (doseq [c in]
-        (if (or (isspace c) (isperiod c))
-          (print c)
-          (print (shift-c c d))))
-      (print "\n"))))
+    (doseq [c in]
+      (if (or (isspace c) (isperiod c))
+        (print c)
+        (print (shift-c c d))))
+    (print "\n")))
 
 (defn decipher [str]
   (process (str/lower-case str)))
@@ -64,7 +63,8 @@
     (println input)
     (println "")
     (println "Output:")
-  (decipher input)))
+    (decipher input)
+    (println "--")))
 
 
 ;; ftq rudef oazrqdqzoq az ftq fabuo ar mdfuruoumx uzfqxxusqzoq ime tqxp mf pmdfyagft oaxxqsq uz ftue kqmd.
