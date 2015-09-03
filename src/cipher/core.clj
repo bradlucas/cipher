@@ -1,6 +1,6 @@
 (ns cipher.core
-  (:use [clojure.string :as str :only [lower-case]])
-  (:gen-class :main true))
+  (:gen-class)
+  (:use [clojure.string :as str :only [lower-case]]))
 
 ;;; http://en.wikipedia.org/wiki/Caesar_cipher
 ;;;

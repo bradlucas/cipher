@@ -1,4 +1,9 @@
-(defproject cipher "1.0.0"
+(defproject cipher "1.0.0-SNAPSHOT"
   :description "AI Class cipher problem"
-  :dependencies [[org.clojure/clojure "1.3.0"]]
-  :main cipher.core)
+  :license {:name "Eclipse Public License"
+            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :dependencies [[org.clojure/clojure "1.7.0"]]
+  :main ^:skip-aot cipher.core
+  :target-path "target/%s"
+  :profiles {:uberjar {:aot :all}})
+
