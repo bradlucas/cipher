@@ -1,15 +1,20 @@
 # cipher
 ======
 
-A solution to the cipher problem asked at the end of the Stanford AI-Class.
+A solution to the cipher problem asked at the end of the class Introduction to AI (ai-class.com)taught by Sebastian Thrun and Peter Norvig in the Fall of 2011.
 
-## Build
-
-    $ lein uberjar
 
 ## Usage
 
-    $ java -jar cipher-1.0.0-standalone.jar
+	$ lein run
+
+	Or
+
+    $ lein uberjar
+	$ java -jar target/uberjar/cipher-1.0.0-SNAPSHOT-standalone.jar
+
+
+
 
 ## License
 
